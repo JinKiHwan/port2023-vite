@@ -20,10 +20,29 @@
             <a href="#contact">컨택트 영역 바로가기</a>
         </div>
 
-        <header id="header"></header>
+        <header id="header" role="banner">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <h1>
+                        <a href="#">portfolio <em>vite</em></a>
+                    </h1>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#intro">intro</a></li>
+                        <li><a href="#skill">skill</a></li>
+                        <li><a href="#site">site</a></li>
+                        <li><a href="#port">portfolio</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__nav__mobile" id="headerToggle" aria-controls="primary-menu" aria-expanded="false" role="button" tabindex="0"><span></span></div>
+            </div>
+        </header>
         <!-- //헤더 -->
 
-        <main id="main">
+        <main id="main" role="main">
             <section id="intro">intro</section>
 
             <section id="skill">skill</section>
@@ -36,7 +55,7 @@
         </main>
         <!-- //메인 -->
 
-        <footer id="footer"></footer>
+        <footer id="footer" role="contentinfo"></footer>
         <!-- //푸터 -->
         <script type="module" src="assets/js/main.js"></script>
     </body>
